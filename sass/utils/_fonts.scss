@@ -3,6 +3,10 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 1.19;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+    }
 }
 
 %title-font {
@@ -11,6 +15,11 @@
     line-height: 1.16;
     margin-bottom: 30px;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
 }
 
 %modal-title {

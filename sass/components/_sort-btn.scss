@@ -4,15 +4,27 @@
         flex-wrap: wrap;
         justify-content: start;
         margin-bottom: 40px;
+
+        @media screen and (min-width: 768px) {
+            justify-content: center;
+        }
     }
 
     &__item:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 15px;
+        }
         margin-right: 8px;
-        margin-bottom: 15px;
     }
 
     &__item:nth-child(4) {
         margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        &__item {
+            margin-bottom: 0;
+        }
     }
 
     &__button {

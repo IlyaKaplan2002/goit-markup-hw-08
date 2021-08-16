@@ -1,10 +1,31 @@
 .cards-list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    @media screen and (max-width: 1199px) {
+        &__item {
+            flex-basis: calc((100% - 30px) / 2);
+        }      
+
+        &__item:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (min-width: 1199px) {
+        &__item {
+            flex-basis: calc((100% - 60px) / 3);
+        }
+
+        &__item:not(:nth-child(n + 7)) {
+            margin-bottom: 30px;
+        }
+    }
 //   display: flex;
 //   flex-wrap: wrap;
-
-    &__item:not(:last-child) {
-        margin-bottom: 30px;
-    }
 }
 
 .card {
