@@ -13,7 +13,7 @@ $colors: (
     'modal-placeholder-color': rgba(117, 117, 117, 0.5),
     'footer-contacts': rgba(255, 255, 255, 0.6),
     'subscribe-input': rgba(0, 0, 0, 0.15),
-);
+    'mobile-menu-social-links': rgba(21, 21, 21, 0.2),);
 
 @function getColor($key) {
   @return map-get($colors, $key);
