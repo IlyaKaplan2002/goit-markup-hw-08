@@ -22,10 +22,17 @@
     z-index: 1000;
     padding: 40px;
     width: calc(100% - 30px);
-    // width: 528px;
     background-color: getColor('bg-1');
     @extend %shadow;
     border-radius: 4px;
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 528px;
+    }
 
     &__title {
         @extend %modal-title;

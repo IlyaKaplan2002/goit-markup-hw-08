@@ -1,12 +1,23 @@
 .principles {
 
     &__list {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
         // display: flex;
         // justify-content: space-between;
     }
 
     &__item:not(:last-child) {
         margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+        &__item {
+            flex-basis: calc((100% - 30px) / 2);
+        }
     }
 
     &__icon {
