@@ -3,7 +3,7 @@
     padding: 24px 0;
 
     .container {
-        // display: flex;
+        display: flex;
     }
 }
 
@@ -11,40 +11,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    &__menu {
-        width: 40px;
-        height: 40px;
-        fill: getColor('main-text-color');
-    }
-
-    &__menu:hover,
-    &__menu:focus {
-        fill: getColor('hover-color');
-    }
-
-    &__mobile {
-        display: none;
-    }
-
-    &__mobile.is-open{
-        display: block;
-    }
+    width: 100%;
+    // margin-right: auto;
 
     &__links {
         // display: flex;
-        // align-items: center;
+        display: none;
+        align-items: center;
     }
 
     &__item {
-        // margin-right: 50px;
+        margin-right: 50px;
     }
 }
 
 .logo {
     @extend %logo-font;
     color: getColor('black');
-    // margin-right: 93px;
+    margin-right: 93px;
     width: 145px;
 
     &__text {
@@ -84,7 +68,8 @@
 
 .contacts {
         // display: flex;
-        // align-items: center;
+        display: none;
+        align-items: center;
 
         &__item:not(:last-child) {
             margin-right: 50px;
