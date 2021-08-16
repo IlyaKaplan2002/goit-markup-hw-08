@@ -1,7 +1,12 @@
 .principles {
+
     &__list {
-        display: flex;
-        justify-content: space-between;
+        // display: flex;
+        // justify-content: space-between;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 30px;
     }
 
     &__icon {
@@ -15,6 +20,7 @@
     }
 
     &__title {
+        text-align: center;
         font-weight: 700;
         text-transform: uppercase;
         margin-bottom: 10px;
@@ -23,6 +29,7 @@
     &__text {
         color: getColor('second-color');
         line-height: 1.71;
-        width: 270px;
+        letter-spacing: 0.03em;
+        // width: 270px;
     }
 }

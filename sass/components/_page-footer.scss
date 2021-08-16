@@ -4,15 +4,17 @@
   padding-bottom: 60px;
 
   .container {
-      display: flex;
-      justify-content: space-between;
+    //   display: flex;
+    //   justify-content: space-between;
   }
 
   &__social-links {
-      padding-top: 12px;
+    //   padding-top: 12px;
+    padding-bottom: 60px;
   }
 
   &__title {
+    text-align: center;
     font-weight: 700;
     text-transform: uppercase;
     color: getColor('bg-1');
@@ -21,6 +23,9 @@
 }
 
 .footer-contacts {
+    text-align: center;
+    padding-bottom: 60px;
+
     &__logo {
         display: inline-block;
         color: getColor('bg-1');
@@ -42,6 +47,7 @@
 }
 
 .social-links {
+    justify-content: center;
     @extend %social-links;
     padding: 0;
 
@@ -69,22 +75,24 @@
 }
 
 .subscribe {
-    padding-top: 12px;
+    // padding-top: 12px;
+    
     &__form {
-        display: flex;
+        // display: flex;
     }
 
     &__email {
-        margin-right: 12px;
+        // margin-right: 12px;
     }
 
     &__input {
+        margin-bottom: 20px;
         background-color: inherit;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
         outline: none;
         padding: 15px 16px;
-        width: 358px;
+        width: 100%;
         color: getColor('bg-1');
         font-size: 16px;
         filter: drop-shadow(0px 4px 4px getColor('subscribe-input'));
@@ -107,6 +115,7 @@
         border-radius: 4px;
         display: flex;
         align-items: center;
+        margin: 0 auto;
     }
 
     &__button:hover {

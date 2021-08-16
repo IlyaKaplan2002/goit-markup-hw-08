@@ -1,12 +1,18 @@
 .sort-btn {
     &__list {
         display: flex;
-        justify-content: center;
-        margin-bottom: 50px;
+        flex-wrap: wrap;
+        justify-content: start;
+        margin-bottom: 40px;
     }
 
     &__item:not(:last-child) {
         margin-right: 8px;
+        margin-bottom: 15px;
+    }
+
+    &__item:nth-child(4) {
+        margin-bottom: 0;
     }
 
     &__button {

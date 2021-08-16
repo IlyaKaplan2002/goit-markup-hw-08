@@ -1,18 +1,22 @@
 .cards-list {
-  display: flex;
-  flex-wrap: wrap;
+//   display: flex;
+//   flex-wrap: wrap;
+
+    &__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
 }
 
 .card {
-    width: 370px;
-    margin: 0 30px 30px 0;
+    width: 100%;
+    // margin: 0 30px 30px 0;
 
     &:nth-child(3n + 3) {
-        margin-right: 0;
+        // margin-right: 0;
     }
 
     &:nth-child(n + 7) {
-        margin-bottom: 0;
+        // margin-bottom: 0;
     }
 
     &__link {
@@ -51,6 +55,7 @@
 
     &__image {
         display: block;
+        width: 100%;
     }
 
     &__description {

@@ -1,8 +1,9 @@
 .job {
     padding: 0 0 94px 0;
+    display: none;
 
     &__list {
-        display: flex;
+        // display: flex;
     }
 
     &__item:not(:last-child) {

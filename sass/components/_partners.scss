@@ -6,18 +6,23 @@
 
     &__list {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
-    &__item:not(:last-child) {
-        margin-right: 30px;
+    &__item {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+
+    &__item:not(:nth-child(n+5)) {
+        margin-bottom: 30px;
     }
 
     &__link  {
+        padding: 16px 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 170px;
-        height: 92px;
         border: 1px solid getColor('partners-color');
         border-radius: 4px;
         color: getColor('partners-color');

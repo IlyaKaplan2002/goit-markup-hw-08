@@ -1,23 +1,48 @@
 .hero {
-    max-width: 1600px;
-    margin: 0 auto;
-    background-color: #c4c4c4;
-    padding: 200px 0;
-    background-image: linear-gradient(to right, rgba(47,  48, 58, 0.4), getColor('hero-bg')),
-      url('../images/index/hero_bg.jpg');
-    background-size: 1600px;
-    background-repeat: no-repeat;
-    background-position: center;
-
     &__container {
+        background-color: #c4c4c4;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 118px 0;
         text-align: center;
+
+        @media screen and (max-width: 480px) {
+        @include hero-bg('mobile', '1');
+
+        @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    @include hero-bg('mobile', '2');
+                }
+        }
+
+        @media screen and (min-width: 481px) {
+            @include hero-bg('tablet', '1');
+
+            @media (min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                        @include hero-bg('tablet', '2');
+                    }
+        }
+
+        @media screen and (min-width: 769px) {
+            @include hero-bg('desktop', '1');
+
+            @media (min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                        @include hero-bg('desktop', '2');
+                    }
+        }
     }
 
     &__title {
         text-transform: uppercase;
         color: getColor('bg-1');
         font-weight: 900;
-        font-size: 44px;
+        font-size: 26px;
         line-height: 1.36;
         word-wrap: break-word;
         text-align: center;
