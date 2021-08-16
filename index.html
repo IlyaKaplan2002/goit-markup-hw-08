@@ -28,7 +28,11 @@
             ><span class="logo__text">Web</span>Studio</a
           >
 
-          <button class="mobile-menu__open-menu">
+          <button
+            class="mobile-menu__open-menu js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
             <svg class="mobile-menu__menu-icon">
               <use href="./images/icons.svg#menu"></use>
             </svg>
@@ -65,8 +69,8 @@
       </div>
     </header>
 
-    <div class="mobile-menu">
-      <button class="mobile-menu__close-menu">
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="mobile-menu__close-menu js-close-menu">
         <svg class="mobile-menu__menu-icon">
           <use href="./images/icons.svg#close-menu"></use>
         </svg>
@@ -599,6 +603,6 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src=".js/mobile-menu.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
