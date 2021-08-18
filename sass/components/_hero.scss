@@ -7,7 +7,7 @@
         padding: 118px 0;
         text-align: center;
 
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 767px) {
         @include hero-bg('mobile', '1');
 
         @media (min-device-pixel-ratio: 2),
@@ -17,7 +17,7 @@
                 }
         }
 
-        @media screen and (min-width: 481px) {
+        @media screen and (min-width: 768px) {
             @include hero-bg('tablet', '1');
 
             @media (min-device-pixel-ratio: 2),
@@ -27,7 +27,7 @@
                     }
         }
 
-        @media screen and (min-width: 769px) {
+        @media screen and (min-width: 1200px) {
             @include hero-bg('desktop', '1');
 
             @media (min-device-pixel-ratio: 2),
