@@ -39,3 +39,7 @@
     background-image: linear-gradient(to right, rgba(47,  48, 58, 0.4), getColor('hero-bg')),
       url('../images/index/hero/hero-#{$device}@#{$pixel-ratio}x.jpg');
 }
+
+@mixin flex-formula($amount) {
+    flex-basis: calc(100% / #{$amount} - 30px);
+}

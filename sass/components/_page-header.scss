@@ -17,10 +17,7 @@
 
 .nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 100%;
-    // margin-right: auto;
 
     @media screen and (min-width: 1200px) {
         width: auto;
@@ -35,7 +32,7 @@
         }
     }
 
-    &__item {
+    &__item:not(:last-child) {
         margin-right: 50px;
     }
 }
@@ -83,6 +80,7 @@
 .contacts {
         display: none;
         align-items: center;
+        margin-left: auto;
 
         @media screen and (min-width: 768px) {
             display: block;
@@ -93,7 +91,6 @@
         }
 
         &__item:not(:last-child) {
-            // margin-right: 50px;
             margin-bottom: 10px;
 
             @media screen and (min-width: 1200px) {

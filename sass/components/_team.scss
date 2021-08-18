@@ -9,9 +9,9 @@
         @media screen and (min-width: 768px) {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            margin-left: -30px;
+            margin-bottom: -30px;
         }
-        // display: flex;
     }
 
     &__item {
@@ -30,11 +30,17 @@
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         &__item {
-            flex-basis: calc((100% - 30px) / 2);
-        }
-
-        &__item:not(:nth-child(n + 3)) {
+            @include flex-formula(2);
             margin-bottom: 30px;
+            margin-left: 30px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        &__item {
+            margin-bottom: 30px;
+            margin-left: 30px;
+            @include flex-formula(4);
         }
     }
 }

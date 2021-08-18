@@ -28,16 +28,6 @@
             ><span class="logo__text">Web</span>Studio</a
           >
 
-          <button
-            class="mobile-menu__open-menu js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg class="mobile-menu__menu-icon">
-              <use href="./images/icons.svg#menu"></use>
-            </svg>
-          </button>
-
           <ul class="nav__links">
             <li class="nav__item">
               <a href="./index.html" class="nav__link nav__link--current">Студия</a>
@@ -46,6 +36,16 @@
             <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
           </ul>
         </nav>
+
+        <button
+          class="mobile-menu__open-menu js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu__menu-icon">
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
 
         <ul class="page-header__contacts contacts">
           <li class="contacts__item">
@@ -293,13 +293,42 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item team-member">
-              <img
-                class="team-member__image"
-                srcset="./images/index/team/team1.jpg 1x, ./images/index/team/team1@2x.jpg 2x"
-                src="./images/index/team/team1.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index/team/mobile/team1.jpg    1x,
+                    ./images/index/team/mobile/team1@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/index/team/desktop/team1.jpg    1x,
+                    ./images/index/team/desktop/team1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/index/team/tablet/team1.jpg    1x,
+                    ./images/index/team/tablet/team1@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+
+                <img
+                  class="team-member__image"
+                  src="./images/index/team/mobile/team1.jpg"
+                  alt="Игорь Демьяненко"
+                  width="270"
+                />
+              </picture>
+
               <h3 class="team-member__title">Игорь Демьяненко</h3>
               <p class="team-member__text">Product Designer</p>
               <ul class="team-member__social-links">
@@ -334,13 +363,42 @@
               </ul>
             </li>
             <li class="team__item team-member">
-              <img
-                class="team-member__image"
-                srcset="./images/index/team/team2.jpg 1x, ./images/index/team/team2@2x.jpg 2x"
-                src="./images/index/team/team2.jpg"
-                alt="Ольга Репина"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index/team/mobile/team2.jpg    1x,
+                    ./images/index/team/mobile/team2@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/index/team/desktop/team2.jpg    1x,
+                    ./images/index/team/desktop/team2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/index/team/tablet/team2.jpg    1x,
+                    ./images/index/team/tablet/team2@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+
+                <img
+                  class="team-member__image"
+                  src="./images/index/team/mobile/team2.jpg"
+                  alt="Ольга Репина"
+                  width="270"
+                />
+              </picture>
+
               <h3 class="team-member__title">Ольга Репина</h3>
               <p class="team-member__text">Frontend Developer</p>
               <ul class="team-member__social-links">
@@ -375,13 +433,42 @@
               </ul>
             </li>
             <li class="team__item team-member">
-              <img
-                class="team-member__image"
-                srcset="./images/index/team/team3.jpg 1x, ./images/index/team/team3@2x.jpg 2x"
-                src="./images/index/team/team3.jpg"
-                alt="Николай Тарасов"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index/team/mobile/team3.jpg    1x,
+                    ./images/index/team/mobile/team3@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/index/team/desktop/team3.jpg    1x,
+                    ./images/index/team/desktop/team3@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/index/team/tablet/team3.jpg    1x,
+                    ./images/index/team/tablet/team3@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+
+                <img
+                  class="team-member__image"
+                  src="./images/index/team/mobile/team3.jpg"
+                  alt="Николай Тарасов"
+                  width="270"
+                />
+              </picture>
+
               <h3 class="team-member__title">Николай Тарасов</h3>
               <p class="team-member__text">Marketing</p>
               <ul class="team-member__social-links">
@@ -416,13 +503,42 @@
               </ul>
             </li>
             <li class="team__item team-member">
-              <img
-                class="team-member__image"
-                srcset="./images/index/team/team4.jpg 1x, ./images/index/team/team4@2x.jpg 2x"
-                src="./images/index/team/team4.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index/team/mobile/team4.jpg    1x,
+                    ./images/index/team/mobile/team4@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/index/team/desktop/team4.jpg    1x,
+                    ./images/index/team/desktop/team4@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/index/team/tablet/team4.jpg    1x,
+                    ./images/index/team/tablet/team4@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+
+                <img
+                  class="team-member__image"
+                  src="./images/index/team/mobile/team4.jpg"
+                  alt="Михаил Ермаков"
+                  width="270"
+                />
+              </picture>
+
               <h3 class="team-member__title">Михаил Ермаков</h3>
               <p class="team-member__text">UI Designer</p>
               <ul class="team-member__social-links">
@@ -513,7 +629,7 @@
 
     <footer class="footer">
       <div class="container">
-        <section class="footer-contacts">
+        <div class="footer-contacts">
           <a href="./index.html" class="logo footer-contacts__logo"
             ><span class="logo__text">Web</span>Studio</a
           >
@@ -538,9 +654,9 @@
               </li>
             </ul>
           </address>
-        </section>
+        </div>
 
-        <section class="footer__social-links">
+        <div class="footer__social-links">
           <h2 class="footer__title">присоединяйтесь</h2>
           <ul class="social-links">
             <li class="social-links__item">
@@ -572,9 +688,9 @@
               </a>
             </li>
           </ul>
-        </section>
+        </div>
 
-        <section class="footer__subscribe subscribe">
+        <div class="footer__subscribe subscribe">
           <h2 class="footer__title">Подпишитесь на рассылку</h2>
 
           <form class="subscribe__form">
@@ -592,7 +708,7 @@
               </svg>
             </button>
           </form>
-        </section>
+        </div>
       </div>
     </footer>
 

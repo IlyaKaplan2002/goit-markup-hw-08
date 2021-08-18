@@ -9,24 +9,18 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-
-    @media screen and (min-width: 1200px) {
-        justify-content: space-between;
-    }
-    //   display: flex;
-    //   justify-content: space-between;
   }
 
   &__social-links {
-    //   padding-top: 12px;
     padding-bottom: 60px;
-
+      
     @media screen and (min-width: 768px) {
         padding-top: 5px;
         padding-bottom: 0;
     }
-
-    @media screen and (min-width: 1200px) {
+        
+        @media screen and (min-width: 1200px) {
+        margin-left: 70px;
         padding-top: 12px;
     }
   }
@@ -108,15 +102,13 @@
 }
 
 .subscribe {
-    // padding-top: 12px;
-
+    
     @media screen and (min-width: 1200px) {
+        margin-left: 93px;
         padding-top: 12px;
     }
     
     &__form {
-        // display: flex;
-        // width: 450px;
         width: 100%;
 
         @media screen and (min-width:767px) {
@@ -133,7 +125,6 @@
         @media screen and (min-width: 1200px) {
             margin-right: 12px;
         }
-        // margin-right: 12px;
     }
 
     &__input {
